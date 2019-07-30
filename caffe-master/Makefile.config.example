@@ -8,7 +8,7 @@
 # CPU_ONLY := 1
 
 # uncomment to disable IO dependencies and corresponding data layers
-# USE_OPENCV := 0
+USE_OPENCV := 1
 # USE_LEVELDB := 0
 # USE_LMDB := 0
 # This code is taken from https://github.com/sh1r0/caffe-android-lib
@@ -105,7 +105,7 @@ LIBRARY_DIRS := $(PYTHON_LIB) /usr/local/lib /usr/lib /usr/lib/x86_64-linux-gnu/
 
 # Uncomment to use `pkg-config` to specify OpenCV library paths.
 # (Usually not necessary -- OpenCV libraries are normally installed in one of the above $LIBRARY_DIRS.)
-# USE_PKG_CONFIG := 1
+USE_PKG_CONFIG := 1
 
 # N.B. both build and distribute dirs are cleared on `make clean`
 BUILD_DIR := build
